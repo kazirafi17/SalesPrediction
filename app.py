@@ -83,9 +83,9 @@ if st.button("Predict Sales"):
     st.success(f"The predicted sales are: ${result:.2f}")
 
 # Footer
-st.markdown("""
+st.markdown(f"""
 <footer>
     &copy;
-    <span class='highlight'>Prepared by Abdul Mukit.</span>
+    <a href="https://www.linkedin.com/in/abdul-mukit-1bbb72218" target="_blank" class='highlight'>Abdul Mukit</a>.
 </footer>
 """, unsafe_allow_html=True)
