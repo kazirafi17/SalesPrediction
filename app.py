@@ -23,7 +23,8 @@ st.title("Sales Prediction App")
 st.markdown("""
 <style>
     .reportview-container {
-        background: linear-gradient(to right, #e0eafc, #cfdef3);
+        background: url('https://www.toptal.com/designers/subtlepatterns/patterns/memphis-colorful.png');
+        background-size: cover;
         color: #333;
     }
     .sidebar .sidebar-content {
@@ -46,6 +47,17 @@ st.markdown("""
     .stButton>button:hover {
         background-color: #45a049;
         color: white;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        color: #fff;
+        background: #333;
+    }
+    .highlight {
+        font-weight: bold;
+        color: #FFD700;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -72,8 +84,8 @@ if st.button("Predict Sales"):
 
 # Footer
 st.markdown("""
-<footer style='text-align: center; padding: 20px;'>
+<footer>
     &copy; 2024 Sales Prediction App. All rights reserved.<br>
-    Prepared by Abdul Mukit.
+    <span class='highlight'>Prepared by Abdul Mukit.</span>
 </footer>
 """, unsafe_allow_html=True)
