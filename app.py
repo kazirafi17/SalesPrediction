@@ -22,8 +22,8 @@ def predict_sales(outlet_type, outlet_identifier_out027, item_mrp, outlet_identi
 st.title("Sales Prediction App")
 st.markdown("""
 <style>
-    .reportview-container {
-        background: url('https://www.toptal.com/designers/subtlepatterns/patterns/memphis-colorful.png');
+    .main {
+        background: url('https://www.toptal.com/designers/subtlepatterns/patterns/memphis-colorful.png') no-repeat center center fixed;
         background-size: cover;
         color: #333;
     }
