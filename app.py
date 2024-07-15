@@ -85,7 +85,7 @@ if st.button("Predict Sales"):
 # Footer
 st.markdown("""
 <footer>
-    &copy; 2024 Sales Prediction App. All rights reserved.<br>
+    &copy;
     <span class='highlight'>Prepared by Abdul Mukit.</span>
 </footer>
 """, unsafe_allow_html=True)
