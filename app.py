@@ -23,7 +23,7 @@ st.title("Sales Prediction App")
 st.markdown("""
 <style>
     .reportview-container {
-        background: #f0f0f5;
+        background: linear-gradient(to right, #e0eafc, #cfdef3);
         color: #333;
     }
     .sidebar .sidebar-content {
@@ -32,9 +32,20 @@ st.markdown("""
     .stButton>button {
         background-color: #4CAF50;
         color: white;
+        border-radius: 12px;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
     }
     .stButton>button:hover {
         background-color: #45a049;
+        color: white;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -52,7 +63,7 @@ outlet_type = st.selectbox("Outlet Type", options=list(outlet_type_options.keys(
 outlet_identifier_out027 = st.selectbox("Outlet Identifier OUT027", options=list(outlet_identifier_out027_options.values()))
 item_mrp = st.number_input("Item MRP", min_value=0.0, format="%.2f")
 outlet_identifier_out019 = st.selectbox("Outlet Identifier OUT019", options=list(outlet_identifier_out019_options.values()))
-outlet_age = st.number_input("Outlet Age", min_value=0, max_value=100, step=1)
+outlet_age = st.slider("Outlet Age", min_value=0, max_value=100, value=0, step=1)
 outlet_identifier_out035 = st.selectbox("Outlet Identifier OUT035", options=list(outlet_identifier_out035_options.values()))
 
 if st.button("Predict Sales"):
@@ -62,6 +73,7 @@ if st.button("Predict Sales"):
 # Footer
 st.markdown("""
 <footer style='text-align: center; padding: 20px;'>
-    &copy; 2024 Sales Prediction App. All rights reserved.
+    &copy; 2024 Sales Prediction App. All rights reserved.<br>
+    Prepared by Abdul Mukit.
 </footer>
 """, unsafe_allow_html=True)
